@@ -6,7 +6,7 @@ Author URL: http://free-template.co.
 License: https://creativecommons.org/licenses/by/3.0/
 License URL: https://creativecommons.org/licenses/by/3.0/
 Site License URL: https://free-template.co/template-license/
-  
+
 Website:  https://free-template.co
 Facebook: https://www.facebook.com/FreeDashTemplate.co
 Twitter:  https://twitter.com/Free_Templateco
@@ -41,7 +41,11 @@ a {
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Playfair Display"; }
+  font-family: "Cairo"; }
+
+.site-logo a {
+  text-transform: uppercase;
+}
 
 .border-2 {
   border-width: 2px; }
@@ -131,7 +135,7 @@ body:after {
 
 .site-footer {
   padding: 4em 0;
-  background: #333333; }
+  background: #000000; }
   @media (min-width: 768px) {
     .site-footer {
       padding: 8em 0; } }
