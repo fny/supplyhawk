@@ -1,23 +1,44 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Based on https://colorlib.com/preview/theme/coach/ -->
+    <!-- yellow #ffdd40, blue #037ef3 -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164526432-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-164526432-1');
+    </script>
+
     <title>Supply Hawk - Emergency Medical Supplies</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="description" content="Supply Hawk rush delivers masks, gowns, and more during the COVID19 coronavirus crisis" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Cairo:300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,900|Cairo:300,600" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
       .site-blocks-cover, .site-blocks-cover > .container > .row {
         height: 100%;
         padding-top: 2vh;
         padding-bottom: 0.1vh;
+      }
+      .product-image {
+        height:100px;
+        width:100px;
+        background-size:cover;
+        background-position:center;
+        display: inline-block;
+        border: 1px solid #eee;
+      }
+      .product-image-wrap {
+         text-align: center;
       }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -42,38 +63,32 @@
     </div>
 
 
-    <header class="site-navbar js-sticky-header site-navbar-target" role="banner" >
+    <header class="site-navbar js-sticky-header site-navbar-target">
       <div class="container">
         <div class="row align-items-center">
-
-          <div class="col-10 col-lg-8">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">
-              <span style="font-weight:300">Supply</span>&nbsp;<span style="font-weight: 600">Hawk
-              <img src="images/hawk-logo.png" style="height: 30px; position: relative; top: -5px; display: inline;"/></span>
-            </a>
+          <div class="col-10 col-md-5">
+            <h1 class="mb-0 site-logo"><a href="/" class="h2 mb-0">
+                <span style="font-weight:300">Supply</span>&nbsp;<span style="font-weight: 600">Hawk
+                  <img src="/images/hawk-logo.png"
+                    style="height: 30px; position: relative; top: -5px; display: inline;" alt="&raquo;" /></span>
+              </a>
             </h1>
           </div>
-
-
-          <div class="col-4 col-lg-4 d-lg-block d-none">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
+          <div class="col-5 col-md-7 d-lg-block d-none">
+            <nav class="site-navigation position-relative text-right">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="#about-section" class="nav-link">About</a></li>
-
-                <li><a href="https://bit.ly/emergency-ppe" class="nav-link"><b>Request PPE</b></a></li>
+                <li><a href="#products-section" class="nav-link">Equipment</a></li>
+                <li><a href="/order" class="nav-link"><b>Order PPE</b></a></li>
               </ul>
             </nav>
           </div>
-
-
-          <div class="col-2 d-inline-block d-lg-none ml-md-0 py-3" style="font-size: 1.5em; margin-top: -0.5em;"><a href="#" class="site-menu-toggle js-menu-toggle float-right">☰</a></div>
-
+          <div class="col-2 d-inline-block d-lg-none ml-md-0 py-3" style="font-size: 1.5em; margin-top: -0.5em;">
+            <a href="#" class="site-menu-toggle js-menu-toggle float-right">☰</a>
+          </div>
         </div>
       </div>
-
     </header>
-
 
     <section class="site-blocks-cover overflow-hidden">
       <div class="container">
@@ -84,16 +99,19 @@
               <div class="col-lg-12">
 
                 <p>
-We work with providers across the US to bulk order and rush deliver<br />certified N95 masks and other PPE.</p>
-<p>We aim to supply at the lowest possible cost.</p>
+                  We work with providers across the US to bulk order and rush deliver<br />certified N95 masks and other PPE.</p>
+                <p>We aim to supply at the lowest possible cost.</p>
 
-<p style="font-weight: bold; text-transform: uppercase;">
-  <a class="btn btn-primary" style="font-weight: bold;" href="https://bit.ly/emergency-ppe">Request Medical Supplies</a>
-</p>
+                <p style="font-weight: bold; text-transform: uppercase;">
+                  <a class="btn btn-primary" style="font-weight: bold;" href="/order">Order Medical Supplies</a>
+                </p>
 
-<p>
-  No commitment required.
-</p>
+                <p>
+                  Request our catalog<br />
+                  <!-- https://mailto.now.sh/ -->
+                  <a
+                    href="mailto:catalog@supplyhawk.org?subject=Catalog%20Request&body=Hello%2C%0A%0AI%20am%20reaching%20out%20on%20behalf%20of%20%5BInstitution%20Name%5D.%0ACould%20you%20send%20us%20a%20copy%20of%20your%20latest%20catalog%3F%0A%0AThank%20you%2C%0A%5BYour%20Name%5D">catalog@supplyhawk.org</a>
+                </p>
 
               </div>
             </div>
@@ -103,6 +121,49 @@ We work with providers across the US to bulk order and rush deliver<br />certifi
       </div>
     </section>
 
+    <section class="site-section" id="products-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-7 text-center">
+            <h2 class="text-black">Our Equipment</h2>
+            <p>We source our personal protective equipment from top-quality, certified manufacturers.
+            To receive a copy of our catalog, email us at
+            <a
+              href="mailto:catalog@supplyhawk.org?subject=Catalog%20Request&body=Hello%2C%0A%0AI%20am%20reaching%20out%20on%20behalf%20of%20%5BInstitution%20Name%5D.%0ACould%20you%20send%20us%20a%20copy%20of%20your%20latest%20catalog%3F%0A%0AThank%20you%2C%0A%5BYour%20Name%5D">catalog@supplyhawk.org</a>
+            .
+            <br />
+              <b>We source the products below and more.</b>
+          </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 text-left">
+            <div class="rounded-circle img-fluid mb-4 product-image" style="background-image:url(images/procedure-mask.png);"></div>
+            <h3 class="h4 text-black">Procedure Masks</h3>
+            <p>3-ply, fluid resistant, EN14683 Type IIR masks with BFE ≥ 98%. Made from high quality sunbond and meltblown polypropelene.</p>
+          </div>
+          <div class="col-lg-3 text-left">
+            <div class="rounded-circle img-fluid mb-4 product-image" style="background-image:url(images/isolation-gown.jpg);"></div>
+            <h3 class="h4 text-black">Isolation Gowns</h3>
+            <p>AAMI Level II isolation gowns. Made for low to moderate fluid exposure (spray impact &lt;1.0g, hydrostatic pressure&gt;20cm).</p>
+          </div>
+          <div class="col-lg-3 text-left">
+            <div class="rounded-circle img-fluid mb-4 product-image" style="background-image:url(images/antibody-test.jpg);"></div>
+            <h3 class="h4 text-black">SARS-CoV-2 Tests</h3>
+            <p>Immunochromatographic assay for rapid, qualitative detection of SARS-Cov-2 IgG/IgM antibody. Reacts in 15 minutes.</p>
+          </div>
+          <div class="col-lg-3 text-left">
+            <div class="rounded-circle img-fluid mb-4 product-image" style="background-image:url(images/face-shield.png);"></div>
+            <h3 class="h4 text-black">Face Sheilds</h3>
+            <p>Reusable, washable face shields. Fit over glasses and googles. Designed to be ergonomic and comfortable.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <br />
+        <a class="btn btn-primary" style="font-weight: bold;" href="/order">Order Medical Supplies</a>
+      </div>
+    </section>
 
     <section class="site-section" id="about-section">
       <div class="container">
@@ -110,85 +171,90 @@ We work with providers across the US to bulk order and rush deliver<br />certifi
           <div class="col-12 mb-3">
             <h2 class="text-black">We Fight for You</h2>
           </div>
-          <div class="col-md-6 mb-5">
+          <div class="col-md-12 mb-5">
             <p>We're citizens based in Texas, New York, Florida, California, and North Carolina.
               We're apalled by the price gouging we've seen across the industry.
               We aim to fight for the lowest prices for whatever supplies are needed during the COVID crisis.
-              If you are interested in helping to facilitate this effort or have any questions, please contact us: info[at]supplyhawk[dot]org.
             </p>
 
-            <p>We have made it our mission to deliver medical supplies rapidly at the least possible cost.
-            </p>
+            <p>We have made it our mission to deliver medical supplies rapidly at the least possible cost.</p>
 
-            <p>We are seeking the following:
-              <ul>
-                <li>Manufacturers</li>
-                <li>Warehousing</li>
-                <li>Cargo transportation</li>
-                <li>Distribution Volunteers</li>
-              </ul>
-            </p>
             <p>
-              We already have a large amount of interest. We're prepared to make an order by the week's end. Please fill out the interest form so we can determine how to serve everyone. Thank you!<br /><br />
-              <a class="btn btn-primary" style="font-weight: bold; text-transform: uppercase;" href="https://bit.ly/emergency-ppe">Request Medical Supplies</a>
+              We are currently seeking short-term loans to faciliate the import of PPE from abroad.
+              If you are interested in financing our effort or have any additional questions, please contact us:
+              <a href="mailto:info@supplyhawk.org">info@supplyhawk.org</a>
+
             </p>
-          </div>
-          <div class="col-md-5 ml-auto">
-            <h2 class="text-black mb-4 h6">Current Interest</h2>
-            <ul class="list-unstyled">
-              <li class="mb-4">
-                <h3 class="text-black m-0">N95 Masks</h3>
-                <span class="text-muted">3,508,980 Units</span>
-              </li>
-              <li class="mb-4">
-                <h3 class="text-black m-0">Disposable Gowns</h3>
-                <span class="text-muted">964,000 Units</span>
-              </li>
-              <li class="mb-4">
-                <h3 class="text-black m-0">Surgical Masks</h3>
-                <span class="text-muted">292,000 Units</span>
-              </li>
-              <li class="mb-4">
-                <h3 class="text-black m-0">Face Shields</h3>
-                <span class="text-muted">5,500 Units</span>
-                <br />
-                <br />
-                <a class="btn btn-primary" style="font-weight: bold; text-transform: uppercase;" href="https://bit.ly/emergency-ppe">Request Medical Supplies</a>
-              </li>
-            </ul>
+            <br />
+            <a class="btn btn-primary" style="font-weight: bold;" href="/order">Order Medical Supplies</a>
+
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-12 mb-3">
+            <h2 class="text-black">Location and Contact</h2>
+          </div>
+          <div class="col-md-6 mb-5">
+            <p>Our headquarters are based in Dallas, Texas. Our warehouse is located nearby in Carrollton.
+              To estimate shipping to your institution, use the warehouse zip code 75006.
+            </p>
+            <p>For general inquiries, please reach out to us via chat or <a href="mailto:info@supplyhawk.org">info@supplyhawk.org</a>.
+            </p>
+
+            <p>Our mailing address is 539 W Commerce St, #1826, Dallas, TX 75208.</p>
+          </div>
+          <div class="col-md-6">
+<div style="width: 100%"><iframe width="100%" height="300"
+    src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;q=Carrollton%2C%20TX%2075006+(Supply%20Hawk%20Warehouse)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+          </div>
+        </div>
       </div>
     </section>
 
-
     <footer class="site-footer">
       <div class="container">
-              <p class="copyright"><small>
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              Special thanks to <a href="https://airtable.com">Airtable</a> and
+              <a href="https://digitalocean.com">Digital Ocean</a> for their support during the COVID-19 crisis.
+            </p>
+            <p class="copyright">
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Supply Hawk LLC. All rights reserved | This template is made with ♥ by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
-
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> Supply Hawk LLC. All rights reserved. This template
+              is
+              made with ♥ by <a href="https://colorlib.com" target="_blank">Colorlib</a>.
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            <p>
+              <small>
+                539 W Commerce St, #1826, Dallas, TX 75208 &middot; <a
+                  href="mailto:info@supplyhawk.org">info@supplyhawk.org</a>
+              </small>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><a href="/#about-section">About Us</a></li>
+              <li><a href="/#products-section">Equipment</a></li>
+              <li><a href="/ppe-interest">PPE Interest</a></li>
+              <li><a href="/order">Order PPE</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
 
   </div> <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <!-- <script src="js/jquery-ui.js"></script> -->
-  <!-- <script src="js/popper.min.js"></script> -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- <script src="js/owl.carousel.min.js"></script> -->
-  <!-- <script src="js/jquery.countdown.min.js"></script> -->
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <!-- <script src="js/jquery.fancybox.min.js"></script> -->
-  <script src="js/jquery.sticky.js"></script>
-  <!-- <script src="js/isotope.pkgd.min.js"></script> -->
-
-
-  <script src="js/main.js"></script>
-
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.easing.1.3.js"></script>
+  <script src="/js/aos.js"></script>
+  <script src="/js/jquery.sticky.js"></script>
+  <script src="/js/main.js"></script>
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7527878.js"></script>
   </body>
 </html>
